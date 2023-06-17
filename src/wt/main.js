@@ -1,12 +1,6 @@
 import { cpus } from "node:os";
 import { resolve } from "node:path";
-import {
-  Worker,
-  MessageChannel,
-  MessagePort,
-  isMainThread,
-  parentPort,
-} from "node:worker_threads";
+import { Worker } from "node:worker_threads";
 import { fileURLToPath } from "node:url";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
